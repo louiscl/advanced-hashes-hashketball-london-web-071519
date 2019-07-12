@@ -197,6 +197,7 @@ number
 end
 
 def player_stats(player_name)
+  #checked!!!
   stats = {} 
   game_hash.each do |place, team|
     team.each do |attributes, data|
