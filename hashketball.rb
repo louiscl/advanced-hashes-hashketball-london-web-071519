@@ -172,7 +172,7 @@ def team_colors (team)
   end
 end
 
-def team_names(team)
+def team_names
   #checked!!!
   game_hash.map do |home, team|
     team[:team_name]
