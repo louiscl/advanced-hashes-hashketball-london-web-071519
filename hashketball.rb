@@ -131,8 +131,11 @@ def game_hash
       }
 }
 
-def num_points_scored(team)
-
+def num_points_scored(player)
+if game_hash[:home][:players].include?(player)
+  game_hash[:home][:players][player]
+elsif
+game_hash[:away][:players][player]
 end
 
 
