@@ -180,6 +180,7 @@ def team_names(team)
 end
 
 def player_numbers(name_of_team)
+  #checked!!!
   number = []
   game_hash.each do |place, team|
     if team[:team_name] == name_of_team
