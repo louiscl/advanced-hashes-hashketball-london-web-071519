@@ -173,7 +173,7 @@ def team_colors (team)
 end
 
 def team_names(team)
-  game_hash
+  game_hash.map do 
   end
 end
 
