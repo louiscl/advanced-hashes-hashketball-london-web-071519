@@ -180,8 +180,13 @@ def team_names(team)
 end
 
 def player_numbers(team)
-  game_hash.map do 
+  game_hash.map do |place, team|
+    team.each do |attributes, data|
+    if attribute == :players
+        data.each do 
+    end
   end
+end
 
 def player_stats(player)
   
