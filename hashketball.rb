@@ -197,6 +197,6 @@ number
 end
 
 def player_stats(player_name)
-  stats = [] 
+  stats = {} 
   game_hash.each do |place, team|
 end
