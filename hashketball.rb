@@ -158,5 +158,11 @@ def num_points_scored (name)
   end
 end
 
-
+def team_colors (team)
+  if game_hash[:home][:team_name].include?(team) 
+    game_hash[:home][:colors]
+  elsif game_hash[:away][:team_name] == team
+    game_hash[:away][:colors]
+  end
+end
 
