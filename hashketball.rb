@@ -137,6 +137,7 @@ if game_hash[:home][:players].include?(player)
 elsif
 game_hash[:away][:players][player]
 end
+end
 
 
 def num_points_scored (name)
