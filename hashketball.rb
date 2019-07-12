@@ -133,8 +133,8 @@ def game_hash
 
 def num_points_scored (name)
   if game_hash[:home][:players].include?(name) 
-    game_hash[:home][:colors]
-  elsif game_hash[:away][:team_name] == team
+    game_hash[:home][:players][name][:points]
+  elsif game_hash[:away][:players] == team
     game_hash[:away][:colors]
   end
 end
