@@ -16,8 +16,7 @@ def good_practices
   end
 end
 
-def method
-  game_hash = 
+def game_hash 
 {:home => {
   :team_name => "Brooklyn Nets",
   :colors => ["Black", "White"],
