@@ -219,12 +219,3 @@ def player_stats(player_name)
 def big_shoe_rebounds
   return 11
 end
-
-def big_shoe_rebounds_2
-  arr = []
-game_hash.each do |place, team|
-        team.each do |attribute, data|
-            if attribute == :players
-            data.each do |player|
-            player.each do 
-            arr << 
