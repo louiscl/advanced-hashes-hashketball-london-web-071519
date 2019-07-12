@@ -205,7 +205,13 @@ def player_stats(player_name)
            if player[:player_name] == player_name
              stats = player.delete_if do |x, y|
                x == :player_name
-end
+             end
+           end
+         end
+       end
+     end
+   end
+
 
 
 
