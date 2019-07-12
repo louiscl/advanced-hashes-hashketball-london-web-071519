@@ -150,6 +150,7 @@ def num_points_scored (name)
 end
 
 def team_colors (team)
+  #checked!!!
   if game_hash[:home][:team_name].include?(team) 
     game_hash[:home][:colors]
   else
