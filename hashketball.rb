@@ -173,28 +173,15 @@ def team_colors (team)
 end
 
 def team_names(team)
+  #checked!!!
   game_hash.map do |home, team|
     team[:team_name]
   end
 end
 
 def player_numbers(team)
-  answer = []
-  game_hash.each do |location, team_data|
-    team_data.each do |attribute, data|
-      if data == team
-        team_data.each do |attribute, data|
-          if attribute == :players
-            data.each do |p_name, data_item|
-              answer << data_item[:number]
-            end
-          end
-        end
-      end
-    end
+  game_hash.map do 
   end
-  answer
-end
 
 def player_stats(player)
   
