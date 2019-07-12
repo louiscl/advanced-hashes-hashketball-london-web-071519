@@ -130,6 +130,7 @@ def game_hash
             } ]
       }
 }
+end
 
 def num_points_scored(player)
 if game_hash[:home][:players].include?(player)
