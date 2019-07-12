@@ -131,6 +131,25 @@ def game_hash
       }
 }
 
+def player_numbers(team)
+  answer = []
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if data == team
+        team_data.each do |attribute, data|
+          if attribute == :players
+            data.each do |p_name, data_item|
+              answer << data_item[:number]
+            end
+          end
+        end
+      end
+    end
+  end
+  answer
+end
+
+
 def num_points_scored (name)
   if game_hash[:home][:players].include?(name) 
     game_hash[:home][:players][name][:points]
