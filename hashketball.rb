@@ -181,7 +181,7 @@ end
 
 def player_numbers(team)
   game_hash.map do |place, team|
-    if team
+    if team[team_name]
         data.each do 
     end
   end
