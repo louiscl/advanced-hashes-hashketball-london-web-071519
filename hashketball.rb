@@ -173,7 +173,8 @@ def team_colors (team)
 end
 
 def team_names(team)
-  game_hash.map do 
+  game_hash.map do |home, team|
+    team
   end
 end
 
