@@ -131,6 +131,35 @@ def game_hash
       }
 }
 
+def num_points_scored(team)
+
+end
+
+
+def num_points_scored (name)
+  if game_hash[:home][:players].include?(name) 
+    game_hash[:home][:players][name][:points]
+  elsif game_hash[:away][:players] == team
+    game_hash[:away][:colors]
+  end
+end
+
+def team_colors(team)
+  if game_hash[:home][:team_name].include?(team) 
+    game_hash[:home][:colors]
+  elsif game_hash[:away][:team_name] == team
+    game_hash[:away][:colors]
+  end
+end
+
+def team_names(team)
+  if game_hash[:home][:team_name].include?(team) 
+    game_hash[:home][:colors]
+  elsif game_hash[:away][:team_name] == team
+    game_hash[:away][:colors]
+  end
+end
+
 def player_numbers(team)
   answer = []
   game_hash.each do |location, team_data|
@@ -149,27 +178,6 @@ def player_numbers(team)
   answer
 end
 
-
-def num_points_scored (name)
-  if game_hash[:home][:players].include?(name) 
-    game_hash[:home][:players][name][:points]
-  elsif game_hash[:away][:players] == team
-    game_hash[:away][:colors]
-  end
-end
-
-def team_colors (team)
-  if game_hash[:home][:team_name].include?(team) 
-    game_hash[:home][:colors]
-  elsif game_hash[:away][:team_name] == team
-    game_hash[:away][:colors]
-  end
-end
-
-def team_names(team)
-  if game_hash[:home][:team_name].include?(team) 
-    game_hash[:home][:colors]
-  elsif game_hash[:away][:team_name] == team
-    game_hash[:away][:colors]
-  end
+def player_stats(player)
+  
 end
